@@ -2,7 +2,7 @@ import React from 'react'
 import './topbar.scss'
 import {Person} from '@material-ui/icons';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
-
+import GitHubIcon from '@material-ui/icons/GitHub';
 const Topbar = ({menuOpen, setMenuOpen}) => {
     return (
         <div className={"topbar " + (menuOpen && "active") }>
@@ -16,6 +16,10 @@ const Topbar = ({menuOpen, setMenuOpen}) => {
                     <div className="itemContainer">
                         <MailOutlineIcon className="icon"/>
                         <span> taofiqaiyelabegan45@gmail.com </span>
+                    </div>
+                    <div className="itemContainer">
+                       <a href="https://github.com/Taofiqq"><GitHubIcon className="icon"/></a>
+                        
                     </div>
                 </div>
                

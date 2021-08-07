@@ -1,3 +1,77 @@
 .testimonial {
-    background-color: green;
+    background: #3C3B3F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        font-size: 50px
+    }
+
+    .container {
+        width:100%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .card {
+            width: 250px;
+            height: 70%;
+            border-radius:10px;
+            box-shadow: 0px 0px 15px -8px black;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            padding: 20px;
+            transition: all 1s ease;
+            
+            &.featured {
+                width: 300px;
+                height: 75%;
+                margin: 0 30px;
+            }
+            &:hover {
+                transform: scale(1.1)
+            }
+            
+            .top {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    &.left {
+                        height: 25px;
+                    }
+                    &.user {
+                        height: 60px;
+                        width: 60px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        margin: 0 30px;
+                    }
+
+                }
+            }
+            .center {
+                padding: 10px;
+                border-radius: 10px;
+                background-color: pink;
+            }
+            .bottom {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h3{
+                    margin-bottom:5px;
+                }
+            }
+
+        }
+    }
 }
