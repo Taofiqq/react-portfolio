@@ -75,9 +75,20 @@
             font-size: 30px;
 
             span {
-               font-size: inherit;
-               color: green;
+               font-size: 20px;
+               color: #C449C2;
             }
+            .ityped-cursor {
+               animation: blink 0.3s infinite;
+           }
+           @keyframes blink {
+              50% {
+                 opacity: 1;
+              }
+              100%{
+                 opacity: 0;
+              }
+           }
             @include mobile {
                font-size: 25px;
             }

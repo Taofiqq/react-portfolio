@@ -64,6 +64,7 @@ const Portfolio = () => {
                   <div className="item">
                   <img src={d.img} alt="covid-19 vaccine" />
                   <h3>{d.title}</h3>
+                  {/* <a href={d.visit}>Demo</a> */}
               </div>
               ))}
                  

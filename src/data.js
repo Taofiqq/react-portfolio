@@ -1,21 +1,22 @@
 export const featuredPortfolio = [
     {
       id: 1,
-      title: "COVID-19 App",
+      title: "COVID-19 World Tracker",
+      visit: "https://covid-19-trackeer.netlify.app",
       img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+        "https://gray-kmvt-prod.cdn.arcpublishing.com/resizer/ScwCtqqnnt-xC7DGA_7DneYN8TM=/980x0/smart/cloudfront-us-east-1.images.arcpublishing.com/gray/D4AX2CSBAVBKPGWL5ZOL2FHPU4.png",
     },
     {
       id: 2,
       title: "Who Wants to be a Millionaire",
       img:
-        "https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
+        "https://images.saymedia-content.com/.image/t_share/MTc0NDQ4MjU1ODIyNzM0OTgy/complete-history-of-who-wants-to-be-a-millionaire-lifelines.jpg",
     },
     {
       id: 3,
-      title: "Movie Search App",
+      title: "Sneakers Cart Website",
       img:
-        "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
+        "https://th.bing.com/th/id/R.dc75c9056b008bc555c136ca15ad8085?rik=A3I9G8%2fpB8QdlQ&riu=http%3a%2f%2fimages.complex.com%2fcomplex%2fimage%2fupload%2fc_fill%2cg_center%2cw_1200%2ff_auto%2cfl_lossy%2cpg_1%2cq_auto%2fc_fill%2cg_center%2cw_1200%2fScreen_Shot_2016-04-04_at_1.54.07_PM_f9e2x6.jpg&ehk=kqhGpCmaRCiGTMHInzAnNFglkjtoIZYq0oKMwJDVL0Q%3d&risl=&pid=ImgRaw&r=0",
     },
     {
       id: 4,

@@ -13,7 +13,7 @@ const Contact = () => {
                <img src="resource/shake.svg" alt="" />
            </div>
            <div className="right">
-               <h2>Contact Me</h2>
+               <h2>Get in Touch</h2>
                <form name="contact-form" method="POST" data-netlify="true">
                    <input type="hidden" name="form-name" value="contact-form" />
                    <input type="email" name="email" placeholder="Enter your email" />
