@@ -2,8 +2,8 @@
 .topbar{
     width:100%;
     height:70px;
-    background-color: #2C394B;
-    color: red;
+    background-color: white;
+    color: white;
     position: fixed;
     top: 0;
     z-index: 10;
@@ -24,11 +24,10 @@
                 font-weight:700;
                 text-decoration:none;
                 margin-right: 40px;
-                background: #23074d;  /* fallback for old browsers */
-                background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                background: #870000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-                
                 background-clip:text;
                 -webkit-text-fill-color:transparent;
             }
@@ -40,7 +39,10 @@
                 @include mobile {
                     display:none;
                  }
-
+                 a {
+                     color: #343A40;
+                     display: flex;
+                 }
                 .icon{
                     font-size: 18px;
                     margin-right: 5px;
@@ -48,9 +50,11 @@
                 span {
                     font-size: 15px;
                     font-weight:800;
-                    background: #23074d;  /* fallback for old browsers */
-                    background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
-                    background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    background: #870000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
                     background-clip:text;
                     -webkit-text-fill-color:transparent;
 
@@ -70,7 +74,7 @@
                 span {
                     width: 100%;
                     height: 3px;
-                    background-color: red;
+                    background-color: #0A1931;
                     transform-origin: left;
                     transition: all 1s ease;
                 }
@@ -78,7 +82,7 @@
         }
     }
     &.active {
-        background-color: black;
+        background-color: #3A6351;
         color: white;
 
         .hamburger {
