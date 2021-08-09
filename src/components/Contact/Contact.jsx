@@ -14,10 +14,10 @@ const Contact = () => {
            </div>
            <div className="right">
                <h2>Contact Me</h2>
-               <form name="contact" method="post" data-netlify="true" onSubmit="submit">
-                   <input type="hidden" name="form-name" value="contact" />
-                   <input type="email" name="name" placeholder="Email" />
-                   <textarea name = "message" placeholder="Message"></textarea>
+               <form name="contact-form" method="POST" data-netlify="true">
+                   <input type="hidden" name="form-name" value="contact-form" />
+                   <input type="email" name="email" placeholder="Enter your email" />
+                   <textarea name = "message" placeholder="Enter your Messsage"></textarea>
                    <button className="btn-grad" type="submit">Send</button>
                    {/* {message && <span>Thank you for reaching out. I will reply as soon as possible. </span>} */}
                </form>

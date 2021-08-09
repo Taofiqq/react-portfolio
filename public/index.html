@@ -27,6 +27,11 @@
     <title>My Portfolio Website</title>
   </head>
   <body>
+    <form name="contact-form" netlify netlify-honeypot="bot-field" action='/' hidden>
+      <input type="email" name="name"  />
+      <textarea name = "message"></textarea>
+      <button className="btn-grad" type="submit">Send</button>
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
