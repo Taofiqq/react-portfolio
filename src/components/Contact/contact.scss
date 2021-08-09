@@ -1,8 +1,13 @@
+@import "../../global.scss";
 .contact{
     background: #ECE9E6;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
     display:flex;
+
+    @include mobile {
+        flex-direction:column;
+     }
     .left {
         flex:1;
         overflow: hidden;
@@ -33,11 +38,24 @@
                 width: 300px;
                 height: 30px;
                 font-size: 14px;
+                outline: none;
+
+                @include mobile {
+                   width: 200px;
+                   height: 20px;
+                 }
+                
             }
             textarea {
                 width: 300px;
                 height: 200px;
                 font-size: 14px;
+                margin-top: 2rem;
+                outline: none;
+
+                @include mobile {
+                    width: 200px;
+                  }
             }
             // button {
             //     width: 150px;

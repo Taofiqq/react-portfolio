@@ -1,3 +1,4 @@
+@import "../../global.scss";
 .work {
     background: #0F2027;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
@@ -12,6 +13,10 @@
         position: absolute;
         cursor: pointer;
         
+        @include mobile {
+            display: none;
+         }
+      
         &.left{
             left: 100px;
             transform: rotateY(180deg);
@@ -29,6 +34,13 @@
         left: 0;
         transition: all 1s ease-out;
 
+        @include mobile {
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+         }
+      
+
         .container{
             width: 100vw;
             display: flex;
@@ -37,15 +49,21 @@
 
             .item {
                 background: #FFEFBA;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+                background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
                 width: 700px;
                 height: 100%;
                 border-radius: 30px;
                 display: flex;
                 justify-content: center;
                 align-items:center;
+
+                @include mobile {
+                    width: 80%;
+                    height: 150px;
+                    margin: 9px ;
+                 }
+              
             
                 .left {
                     flex: 4;
@@ -61,6 +79,12 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
                         flex-direction: column;
                         justify-content: space-between;
 
+                        @include mobile {
+                            width: 100%;
+                            height: 100%;
+
+                         }
+
                         .imgContainer {
                             width: 40px;
                             height: 40px;
@@ -69,15 +93,34 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
                             justify-content: center;
                             align-items:center;
 
+                            @include mobile {
+                                width: 20px;
+                                height: 20px;
+                             }
+
                             .img{
                                 width: 25px;
+
+                                @include mobile {
+                                    width: 15px;
+                                    
+                                 }
                             }
                         }
                         h2 {
                             font-size: 20px;
+
+                            @include mobile {
+                                font-size: 13px;
+                             }
                         }
                         p{
                             font-size:13px;
+
+                             
+                            @include mobile {
+                                display: none;
+                             }
                         }
                         span{
                             font-size: 12px;

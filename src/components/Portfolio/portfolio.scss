@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .portfolio {
     background: #333333;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
@@ -12,6 +14,11 @@ background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, F
 
     h1 {
         font-size: 50px;
+
+        @include mobile {
+           font-size: 20px;
+         }
+      
     }
 
     ul {
@@ -19,7 +26,13 @@ background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, F
         margin: 10px ;
         padding: 0;
         display: flex;
-        overflow: hidden;
+
+        @include mobile {
+            margin:10px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+         }
+      
     }
 
     .container {
@@ -28,7 +41,11 @@ background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, F
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        overflow: hidden;
+        
+        @include mobile {
+            width: 100%;
+         }
+      
 
         .item {
             width: 220px;
@@ -43,6 +60,13 @@ background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, F
             position: relative;
             transition: all .5s ease;
             cursor: pointer;
+
+            @include mobile {
+                width: 130px;
+                height: 100px;
+                
+             }
+          
 
             h3 {
                 position: absolute;
